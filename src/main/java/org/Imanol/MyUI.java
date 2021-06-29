@@ -28,7 +28,7 @@ public class MyUI extends UI {
         final VerticalLayout layout = new VerticalLayout();
 
         LectorJson lector =new LectorJson();
-        ArrayList<Ips> lista = lector.leer_json("C:\\Users\\Festr\\OneDrive\\Escritorio\\DIS Extraordinaria\\PruebaVaadin\\src\\main\\java\\org\\Imanol\\LocalizaIP.json");
+        ArrayList<Ips> lista = lector.leer_json("src/main/java/org/Imanol/LocalizaIP.json");
         Label l =new Label(longToIp(lista.get(5).getIp_from()));
         TextField Texto1= new TextField("Introduce la Ip en formato '192.168.100.1'");
         TextField Resultado = new TextField("El resultado es: ");
