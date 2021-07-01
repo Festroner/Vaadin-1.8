@@ -24,7 +24,6 @@ public class LectorJson {
                 fichero += linea;
             }
             Reader reader = Files.newBufferedReader(Paths.get(ruta));
-            System.out.println("problema");
             Type type = new TypeToken<ArrayList<Ips>>(){}.getType();
             lista = gson.fromJson(fichero,type);
             reader.close();
